@@ -1,1 +1,8 @@
 /*  your css code here. If applicable */
+#questions{
+	display:flex;
+	flex-direction:column;
+	gap:1em;
+	margin-bottom:1.5em;
+}
+

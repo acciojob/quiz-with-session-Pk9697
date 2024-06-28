@@ -1,5 +1,5 @@
 //your JS code here.
-
+const questionsElement=document.getElementById('questions')
 // Do not change code below this line
 // This code will just display the questions to the screen
 const questions = [
@@ -29,7 +29,7 @@ const questions = [
     answer: "Ottawa",
   },
 ];
-
+   
 // Display the quiz questions and choices
 function renderQuestions() {
   for (let i = 0; i < questions.length; i++) {
@@ -43,14 +43,14 @@ function renderQuestions() {
       choiceElement.setAttribute("type", "radio");
       choiceElement.setAttribute("name", `question-${i}`);
       choiceElement.setAttribute("value", choice);
-      if (userAnswers[i] === choice) {
-        choiceElement.setAttribute("checked", true);
-      }
+      // if (userAnswers[i] === choice) {
+      //   choiceElement.setAttribute("checked", true);
+      // }
       const choiceText = document.createTextNode(choice);
       questionElement.appendChild(choiceElement);
       questionElement.appendChild(choiceText);
     }
     questionsElement.appendChild(questionElement);
   }
-}
+}  
 renderQuestions();
