@@ -15,7 +15,7 @@ submitButton.addEventListener('click',(e)=>{
 		}
 	}
 
-	scoreDiv.textContent=score
+	scoreDiv.textContent=`Your score is ${score} out of ${questions.length}.`
 	localStorage.setItem('score',score)
 	
 })
